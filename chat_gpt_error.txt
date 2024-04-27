@@ -1,0 +1,21 @@
+2024-04-27 11:56:13.088 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/welcome/anaconda3/envs/dataengineer_works/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Notebooks/AWS_GENAI/genai-quickstart-pocs/amazon-bedrock-model-playground-poc/app.py", line 49, in <module>
+    answer = orchestrator(question, model_id)
+  File "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Notebooks/AWS_GENAI/genai-quickstart-pocs/amazon-bedrock-model-playground-poc/model_invoker.py", line 54, in orchestrator
+    result = model.chatGPT(model_id, question)
+  File "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Notebooks/AWS_GENAI/genai-quickstart-pocs/amazon-bedrock-model-playground-poc/model_selector.py", line 243, in chatGPT
+    response = openai.completions.create(
+  File "/Users/welcome/anaconda3/envs/dataengineer_works/lib/python3.10/site-packages/openai/_utils/_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/welcome/anaconda3/envs/dataengineer_works/lib/python3.10/site-packages/openai/resources/completions.py", line 517, in create
+    return self._post(
+  File "/Users/welcome/anaconda3/envs/dataengineer_works/lib/python3.10/site-packages/openai/_base_client.py", line 1232, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/welcome/anaconda3/envs/dataengineer_works/lib/python3.10/site-packages/openai/_base_client.py", line 921, in request
+    return self._request(
+  File "/Users/welcome/anaconda3/envs/dataengineer_works/lib/python3.10/site-packages/openai/_base_client.py", line 1012, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 4097 tokens, however you requested 4101 tokens (5 in your prompt; 4096 for the completion). Please reduce your prompt; or completion length.", 'type': 'invalid_request_error', 'param': None, 'code': None}}
