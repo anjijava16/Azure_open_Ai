@@ -1,0 +1,8 @@
+
+ 1113  pip install transformers torch
+ 1114  streamlit run app_embedded_models.py
+ 1115  pip install cudatoolkit\npip install chardet
+ 1116  pip install cudatoolkit\npip install chardet
+ 1117  streamlit run app_embedded_models.py
+ 1118  pip install transformers -U
+ 1119  streamlit run app_embedded_models.py
