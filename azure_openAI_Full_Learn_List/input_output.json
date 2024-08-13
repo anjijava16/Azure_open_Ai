@@ -1,0 +1,75 @@
+# Input
+{
+    "prompt": "Welcome to CLI Azure",
+    "max_tokens": 100,
+    "temperature": 1,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "top_p": 0.5,
+    "stop": null
+}
+
+
+# Output
+
+{
+    "id": "cmpl-9vlpQE9Sr0veSyiUW1pWhyEPt35Mo",
+    "object": "text_completion",
+    "created": 1723555576,
+    "model": "gpt-35-turbo-instruct",
+    "prompt_filter_results": [
+        {
+            "prompt_index": 0,
+            "content_filter_results": {
+                "hate": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "self_harm": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "sexual": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "violence": {
+                    "filtered": false,
+                    "severity": "safe"
+                }
+            }
+        }
+    ],
+    "choices": [
+        {
+            "text": "\n\nCLI Azure is a simple and powerful command line interface for managing Azure resources. With CLI Azure, you can easily create, manage, and monitor your Azure resources from the command line. It provides a streamlined and efficient way to interact with your Azure environment, making it easier to automate tasks and manage your resources.\n\nSome of the key features of CLI Azure include:\n\n- Cross-platform support: CLI Azure works on Windows, Mac, and Linux, so you can manage your Azure resources from any operating system.\n",
+            "index": 0,
+            "finish_reason": "length",
+            "logprobs": null,
+            "content_filter_results": {
+                "hate": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "self_harm": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "sexual": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "violence": {
+                    "filtered": false,
+                    "severity": "safe"
+                }
+            }
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 4,
+        "completion_tokens": 100,
+        "total_tokens": 104
+    }
+}
+
