@@ -1,5 +1,6 @@
 # Mistral Model Running
 
+```
 Use "ollama [command] --help" for more information about a command.
 welcome@jaisairams-Laptop ~ % ollama list
 NAME          	ID          	SIZE  	MODIFIED
@@ -10,6 +11,7 @@ mistral:latest	61e88e884507	4.1 GB	3 months ago
 welcome@jaisairams-Laptop ~ % ollama run mistral:latest
 >>> Send a message (/? for help)
 
+```
 
 
 # Request 
